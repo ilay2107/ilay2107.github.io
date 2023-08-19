@@ -9,6 +9,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $message = "Имя: $name\nТелефон: $phone";
     $headers = "From: webmaster@example.com";
 
-    mail($to, $subject, $message, $headers);
+    mail($to, $subject, $message, $headers, $to);
 }
 ?>
